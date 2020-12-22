@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Trebuchet ms", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #fdfefe;
+  background-color: #f2ab6d;
+  background-image: url("../img/mando-wp-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  background-color: #023859;
+  text-align: center;
+  padding: 1%;
+  border-bottom: 3px solid white;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #fdfefe;
+  letter-spacing: 1.4pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  font-size: 1.6em;
+  color: #fdfefe;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: Roboto;
+  text-indent: 20px;
+  font-size: 1.1em;
+}
+
+/* estilo de enlaces obligatorio y en orden especifico*/
+
+a:link {
+  color: #039be5;
+}
+
+a:visited {
+  color: #00bcd4;
+}
+
+a:hover {
+  color: #66bb6a;
+}
+
+a:active {
+  color: #d4e157;
+}
+
+#instruccionesCamara {
+  font-weight: 700;
+}
+
+#containerPelicula {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#fichaPelicula {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #f29c50;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+#tituloPelicula {
+  width: 100%;
+  background-color: #075f73;
+}
+
+#tituloPelicula h1 {
+  text-align: center;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+.datosTecnicos h2 {
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+#infoPelicula {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+#fotoPelicula {
+  width: 50%;
+}
+
+#fotoPelicula img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#fichaTecnica {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.datosTecnicos {
+  padding: 2%;
+}
+
+.datosTecnicos audio {
+  width: 100%;
+}
+
+#subContenedorPelicula {
+  widows: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+}
+
+.icon-ficha {
+  margin: 0 3% 0 0;
+  color: #f2db66;
+}
+
+.icon {
+  margin: 0 10px;
+  color: #f2db66;
+}
+
+#sinopsis {
+  margin: 0 0 0 8px;
+}

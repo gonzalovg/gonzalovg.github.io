@@ -4,8 +4,10 @@
   <meta charset="utf-8" />
   <title> Formularios </title>
   <meta name="author" content="Gonzalo Verdugo">
-  <meta name="description" content="Plantilla inicial del curso de Diseño de Interfaces">
-
+  <meta name="description" content="Repaso sobre formularios">
+  <link rel="icon" type="image/icon" href="../favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
   <blockquote>
     <p>
       <<<a href="08-tablas-1.html" title="Enlace a ejercicio de listas">Anterior</a>| <a href="../index.html"
-          title="Enlace a la portada de la web">Portada</a>| <a href="#"
+          title="Enlace a la portada de la web">Portada</a>| <a href="11-iframes.html"
           title="Enlace a la siguiente página">Siguiente</a> >>
     </p>
   </blockquote>
@@ -25,10 +27,11 @@
       title="Logo de facebook en texto">
   <h1>Rellena tu perfil</h1>
   </p>
-  <form action="09-formularios-1.html" name="formualrio-registro" method="post">
 
 
-    <table border="2">
+
+  <table border="2">
+    <form action="mailto:gonver17@gmail.com" name="formualrio-registro" method="post" enctype="multipart/form-data">
       <tr>
         <td>
 
@@ -92,20 +95,21 @@
       <tr>
         <td colspan="2">
 
-          <input type="checkbox" name="boletin" <!--checked--> <label for="boletin">Suscribirme al boletín</label>
-  </form>
-  </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <form action="09-formularios-1.html" method="post" name="formulario-registro">
-        <button value="enviar" type="submit">Enviar Datos</button>
-        <button type="reset" value="borrar">Borrar los Datos</button>
+          <input type="checkbox" name="boletin" checked> <label for="boletin">Suscribirme al boletín</label>
 
-    </td>
-  </tr>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <form action="09-formularios-1.html" method="post" name="formulario-registro">
+            <button value="enviar" type="submit">Enviar Datos</button>
+            <button type="reset" value="borrar">Borrar los Datos</button>
+
+        </td>
+      </tr>
+    </form>
   </table>
-  </form>
+
   <hr>
   <p align="right"><a href="#inicio">SUBIR</a></p>
   <pre>
