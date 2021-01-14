@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Trebuchet ms", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #17202a;
+}
+
+h1 {
+  font-size: 2em;
+  color: #17202a;
+  letter-spacing: 1.4pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  font-size: 1.6em;
+  color: #17202a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 20px;
+  font-size: 1.1em;
+}
+
+/* estilo de enlaces obligatorio y en orden especifico*/
+
+a:link {
+  color: #039be5;
+}
+
+a:visited {
+  color: #00bcd4;
+}
+
+a:hover {
+  color: #66bb6a;
+}
+
+a:active {
+  color: #d4e157;
+}
+
+#instruccionesCamara {
+  font-weight: 700;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+#nav li {
+  width: 150px;
+  text-align: center;
+}

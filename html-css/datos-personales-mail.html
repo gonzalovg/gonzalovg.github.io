@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es" dir="ltr">
+    <meta charset="utf-8" />
+    <title> Plantilla </title>
+    <meta name="author" content="Gonzalo Verdugo">
+    <meta name="description" content="Plantilla inicial del curso de Diseño de Interfaces">
+    <link rel="icon" type="image/icon" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <blockquote>
+        <p>
+            <<<a href="#" title="Enlace a ejercicio de listas">Anterior</a>| <a href="../index.html"
+                    title="Enlace a la portada de la web">Portada</a>| <a href="#"
+                    title="Enlace a la siguiente página">Siguiente</a> >>
+        </p>
+    </blockquote>
+    <hr>
+
+    <h2>Formulario datos personales</h2>
+    <h3>Es obligatorio completar todos los campos</h3>
+    <form action=mailto:TUcorreo@dominio.com method="post" enctype="text/plain">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre de
+    usuario" maxlength="20" pattern="[a-zA-Z0-9]+" required autofocus title="Sólo números y letras con una longitud máxima de 20 caracterees
+    incluidos espacios en blanco">
+        <label for="cp">Código Postal</label>
+        <input type="text" name="cp" id="cp" placeholder="28001 o similar" pattern="[0-9]{5}" required
+            title="Sólo 5 números del 0 al 9">
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" pattern="[0-9]{2}" placeholder="Edad" required title="Sólo números comprendidos entre 18 y
+    99" min="18" max="99">
+        <button type="submit" id="enviar">ENVIAR</button>
+    </form>
+
+</body>
+
+</html>
