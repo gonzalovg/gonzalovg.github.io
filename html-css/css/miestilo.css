@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "utf-8";
 /* CSS */
 /*Formato general*/
@@ -47,3 +48,54 @@ a:hover {
   color: #0000ff;
   text-decoration: underline;
 }
+=======
+@charset "utf-8";
+/* CSS */
+/*Formato general*/
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #333;
+}
+h1 {
+  font-size: 2em;
+  color: #069;
+}
+h2 {
+  font-size: 1.6em;
+  color: #09f;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  text-indent: 20px;
+  font-size: 1.1em;
+}
+h3 {
+  text-indent: 20px;
+}
+/*estilo para los enlaces*/
+a:link {
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  color: #ff0000;
+  text-decoration: none;
+}
+a:visited {
+  font-family: Arial;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  color: #00ff00;
+  text-decoration: linethrough;
+}
+a:hover {
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  color: #0000ff;
+  text-decoration: underline;
+}
+>>>>>>> adead732e624ddeb7372c26d266ecf879010941f
