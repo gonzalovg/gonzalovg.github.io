@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<?php
+<<<<<<< HEAD <?php
 
 /**
  * PHP Script to benchmark PHP
