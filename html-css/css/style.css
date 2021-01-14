@@ -4,6 +4,7 @@ body {
   font-family: "Trebuchet ms", Arial, Helvetica, sans-serif;
   font-size: 100%;
   color: #17202a;
+  background-color: #eee;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 }
 h2 {
   font-size: 1.6em;
-  color: #17202a;
+  color: #17204a;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -25,6 +26,9 @@ p {
 }
 
 /* estilo de enlaces obligatorio y en orden especifico*/
+
+
+
 
 a:link {
   color: #039be5;
@@ -46,15 +50,31 @@ a:active {
   font-weight: 700;
 }
 
-#nav {
+ul {
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
 }
 
-#nav li {
+ul li {
   width: 150px;
   text-align: center;
+}
+
+
+.indexLink{
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    
+}
+
+.indexLink:hover{
+    border: 1px dotted #000;
+}
+
+.text-center{
+    text-align: center;
 }
