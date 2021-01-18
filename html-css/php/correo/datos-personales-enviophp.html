@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contacta</title>
+
+    <meta name="title" content="Contacta">
+    <meta name="description" content="Contacta conmigo">
+
+    <meta name="keywords" content="datos personales">
+
+    <meta name="author" content="Gonzalo Verdugo">
+
+    <!--Enlaces a las/las hojas de estilo necesarias-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+
+
+
+
+    <!-- Scripts que realizan operaciones en la estructura de la página cuando se 		carga-->
+
+    <!--<script src="js/YY.js"></script> -->
+
+</head>
+
+<body>
+    <main id="contact-form-main">
+        <p class="text-center"><a href="../../../index.html">INICIO</a></p>
+        <div>
+            <h2 class="contact-h">¿Quieres contactar conmigo?</h2>
+            <h3 class="contact-h">Rellena este formulario a continuacíon</h3>
+
+            <form action="enviar.php" method="post" id="contact-form">
+                <div class="contact-div-partido">
+                    <div class="contact-div-entero">
+                        <label for="nombre">Nombre</label>
+
+                        <input type="text" name="nombre" id="nombre" placeholder="Ej. Juan José" maxlength="20"
+                            pattern="[a-zA-Z0-9]+" required autofocus
+                            title="Sólo números y letras con una longitud máxima de 20 caracterees incluidos espacios en blanco">
+                    </div>
+                    <div class="contact-div-entero">
+                        <label for="correo">Correo</label>
+
+                        <input type="email" name="correo" id="correo" placeholder="Ej. ejemplo@correo.com" required
+                            title="Introduce el formato correcto de un correo eléctronico">
+                    </div>
+                </div>
+
+                <div class="contact-div-entero">
+                    <label for="telefono">Teléfono</label>
+
+                    <input type="text" name="telefono" id="telefono" pattern="[+]{1}[0-9]{11}"
+                        placeholder="Ej. +34612345678" title="Introduce tu numero de teléfono" min="9" max="13">
+                </div>
+
+                <div class="contact-div-entero">
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea  rows="10" type="text" name="mensaje" id="mensaje" placeholder="Contactame" required
+                        title="Sólo números comprendidos entre 18 y 99" max="200"></textarea>
+                </div>
+                <!-- <label for="edad">Edad</label>
+
+        <input type="number" name="edad" id="edad" pattern="[0-9]{2}" placeholder="Edad" required
+            title="Sólo números comprendidos entre 18 y 99" min="18" max="99"> -->
+                <button type="submit" id="enviar">ENVIAR</button>
+            </form>
+        </div>
+    </main>
+</body>
+<!-- Scripts que no realizan operaciones en la estructura de la página cuando 		se carga-->
+
+<!-- <script src="js/xx.js"></script>-->
+
+</html>

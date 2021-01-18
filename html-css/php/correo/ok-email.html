@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es" dir="ltr">
+    <meta charset="utf-8" />
+    <title> Gonzalo Verdugo</title>
+    <meta name="author" content="Gonzalo Verdugo">
+    <meta name="description" content="Éxito en el envio">
+    <link rel="icon" type="image/icon" href="../../../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b228dc2ea7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+</head>
+
+<body>
+    <main id="contact-form-main">
+     
+        <div>
+           <h1 class="text-center">Gracias por tu interés</h1>
+           <h2 class="text-center">Redirigiendote al inicio en <span id="contador"></span></h2>
+           <p class="text-center"><i class="fas fa-check-circle ico-exi"></i></p>
+        </div>
+    </main>
+    </body>
+
+    <script>
+        let cuenta=5;
+
+        let cuentaText= document.getElementById("contador");
+        setInterval(function(){
+            cuentaText.innerHTML=cuenta;
+            cuenta-=1;
+            if(cuenta==1){
+                window.location = "../../../index.html";
+            }
+
+        },1000);
+
+
+    </script>
+
+</html>
