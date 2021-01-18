@@ -6,9 +6,10 @@ header('Content-Type: text/html; charset=UTF-8');
 $nombre = $_POST['nombre'];
 $cp = $_POST['cp'];
 $edad = $_POST['edad'];
+echo $nombre;
 // crea y envía el mensaje de correo electrónico
 $para = 'gonver17@gmail.com';
-$asunto = 'Nuevos Datos personales';
+$asunto = 'Nuevos Datos personalesss';
 $mensaje = '<br> Datos Personales Recibidos desde la Web <br /><br /> ';
 $mensaje .= 'Nombre: '.$nombre.' <br /> ';
 $mensaje .= 'Dirección: '.$cp.'<br /> ';
