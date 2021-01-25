@@ -16,29 +16,29 @@
 
 <body>
     <main id="contact-form-main">
-     
+
         <div>
-           <h1 class="text-center">Gracias por tu interés</h1>
-           <h2 class="text-center">Redirigiendote al inicio en <span id="contador"></span></h2>
-           <p class="text-center"><i class="fas fa-check-circle ico-exi"></i></p>
+            <h1 class="text-center">Gracias por tu interés</h1>
+            <h2 class="text-center">Redirigiendote al inicio en <span id="contador"></span></h2>
+            <p class="text-center"><i class="fas fa-check-circle ico-exi"></i></p>
         </div>
     </main>
-    </body>
+</body>
 
-    <script>
-        let cuenta=5;
+<script>
+    let cuenta = 5;
 
-        let cuentaText= document.getElementById("contador");
-        setInterval(function(){
-            cuentaText.innerHTML=cuenta;
-            cuenta-=1;
-            if(cuenta==1){
-                window.location = "../../../index.html";
-            }
+    let cuentaText = document.getElementById("contador");
+    setInterval(function () {
+        cuentaText.innerHTML = cuenta;
+        cuenta -= 1;
+        if (cuenta == 0) {
+            window.location = "../../../index.html";
+        }
 
-        },1000);
+    }, 1000);
 
 
-    </script>
+</script>
 
 </html>

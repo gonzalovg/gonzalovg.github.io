@@ -1,167 +1,170 @@
 @charset "UTF-8";
 
-
-
 body {
-    font-family: "Trebuchet ms", Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    color: #17202a;
-    background-color: #eee;
+  font-family: "Trebuchet ms", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #17202a;
+  background-color: #eee;
 }
 
 h1 {
-    font-size: 2em;
-    color: #17202a;
-    letter-spacing: 1.4pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
+  color: #17202a;
+  letter-spacing: 1.4pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
-    font-size: 1.6em;
-    color: #17204a;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6em;
+  color: #17204a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 20px;
-    font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 20px;
+  font-size: 1.1em;
 }
 
 /* estilo de enlaces obligatorio y en orden especifico*/
 
 a:link {
-    color: #039be5;
+  color: #039be5;
 }
 
 a:visited {
-    color: #00bcd4;
+  color: #00bcd4;
 }
 
 a:hover {
-    color: #66bb6a;
+  color: #66bb6a;
 }
 
 a:active {
-    color: #d4e157;
+  color: #d4e157;
 }
 
 #instruccionesCamara {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 ul li {
-    width: 150px;
-    text-align: center;
+  width: 150px;
+  text-align: center;
 }
 
 .indexLink {
-    padding: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  display: block;
+  margin: 10px 5px;
+}
+
+@keyframes link-anim {
+  from {
+    transform: skew(3deg, 6deg);
     border: 1px solid #000;
-    border-radius: 5px;
+  }
+  to {
+    transform: skew(3deg, -6deg);
+    border: 2px solid #000;
+  }
 }
 
 .indexLink:hover {
-    border: 1px dotted #000;
+  animation-name: link-anim;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 #contact-form-main {
-    height: 40%;
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Open Sans",sans-serif;
+  height: 40%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
 }
 
-#contact-form-main>div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+#contact-form-main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-
-
 
 #contact-form {
-    display: flex;
-    flex-direction: column;
-
-
-
-
+  display: flex;
+  flex-direction: column;
 }
 
-#contact-form div{
-    margin: 0.6%;
+#contact-form div {
+  margin: 0.6%;
 }
 
-.contact-div-entero{
-    display: flex;
-    flex-direction:column;
-    width: 100%;
-    margin: 2px;
+.contact-div-entero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2px;
 }
 
-.contact-div-partido{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin: 2px;
-
+.contact-div-partido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2px;
 }
 
-.contact-div-partido div{
-    width: 45%;
+.contact-div-partido div {
+  width: 45%;
 }
 
-#contact-form-main input,textarea{
-    padding: 4px;
+#contact-form-main input,
+textarea {
+  padding: 4px;
 }
 
-textarea{
-    resize: none;
-    font-family: "Open sans";
+textarea {
+  resize: none;
+  font-family: "Open sans";
 }
 
-.contact-h{
-    margin: 0.8% 0;
+.contact-h {
+  margin: 0.8% 0;
 }
 
-#contact-form-main button{
-    padding: 5px 0;
-    background-color: #00bcd4;
-    border-radius: 5px;
-    width: 100%;
-    border:1px solid white;
-
+#contact-form-main button {
+  padding: 5px 0;
+  background-color: #00bcd4;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid white;
 }
 
-#contact-form-main button:hover{
-    background-color: #66bb6a;
+#contact-form-main button:hover {
+  background-color: #66bb6a;
 }
 
-.ico-exi{
-    font-size: 5em;
-   color: #66bb6a;
+.ico-exi {
+  font-size: 5em;
+  color: #66bb6a;
 }
 
-
-.ico-fail{
-    font-size: 5em;
-   color:#FE0505 ;
+.ico-fail {
+  font-size: 5em;
+  color: #fe0505;
 }
