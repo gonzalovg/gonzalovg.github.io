@@ -72,17 +72,27 @@ ul li {
 
 @keyframes link-anim {
   from {
-    transform: skew(3deg, 6deg);
+    transform: skew(0);
     border: 1px solid #000;
   }
+  50% {
+    transform: skew(3deg, 4deg);
+    /* transform: rotate(90deg); */
+  }
+  75% {
+    /* transform: rotate(90deg); */
+  }
   to {
-    transform: skew(3deg, -6deg);
+    transform: skew(3deg, -4deg);
+    /* transform: rotate(90deg); */
     border: 2px solid #000;
   }
 }
 
 .indexLink:hover {
   animation-name: link-anim;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 .text-center {
