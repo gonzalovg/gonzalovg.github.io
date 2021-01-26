@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 
-<head lang="es" dir="ltr">
-  <meta charset="utf-8" />
-  <title> Tratamiento de imágenes </title>
-  <meta name="author" content="Gonzalo Verdugo">
-  <meta name="description" content="Aprende sobre el tratamiento de las imágenes en HTML">
-  <link rel="icon" type="image/icon" href="../favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Tratamiento de imágenes </title>
+    <meta name="author" content="Gonzalo Verdugo">
+    <meta name="description" content="Aprende sobre el tratamiento de las imágenes en HTML">
+    <link rel="icon" type="image/icon" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <h1>
-    <center id="inicio">Sobre las imágenes</center>
-  </h1>
-  <blockquote>
-    <p>
-      <<<a href="04-enlaces.html" title="Enlace a ejercicio de listas">Anterior</a>| <a href="../index.html"
-          title="Enlace a la portada de la web">Portada</a>| <a href="06-imagenes-2.html"
-          title="Enlace a la siguiente página">Siguiente</a> >>
-    </p>
-  </blockquote>
-  <hr>
-
-
-  <p>La etiqueta fundamental para insertar una imágen en una página web es <<b>img</b>></p>
-
-  <img src="./img/captura-05-diw.jpg" alt="Interfaz de la página web de IMF Business School"
-    title="Interfaz WEB de IMF">
-
-  <p>Sin embargo sólo con la etiqueta no es suficiente, necesitamos insertar los atributos básicos que me van a permitir
-    "conectar" con la imágen en sí y mostrar cierta información relativa a la imágen en el caso de que la imágen no se
-    cargue o por cuestiones de accesibilidad.</p>
-  <h3><b>Dichos atributos fundamentales son:</b></h3>
-
-  <ul>
-    <li><b>SRC</b>="Ruta a la imágen"</li>
-    <li><b>ALT</b>="Descripción de la imágen"</li>
-    <li><b>WIDTH</b>="Ancho de la imágen en px o %"</li>
-    <li><b>HEIGHT</b>="Altura de la imágen en px o %"</li>
-  </ul>
-
-  <p>Por lo tanto una etiqueta básica completa para insertar la captura que te muestro a continuación quedaría asi.</p>
-
-  <p>
-    <<b>img src="captura.jpg" alt="captura de pantalla de mi web favorita:www.miweb.es"</b>>
-  </p>
-  <p>
-    <img hspace="20px" src="img/bombilla-05-diw.jpg" alt="Una bombilla encendida y otra apagada" title="Bombillas"
-      align="left">
-
-
-    <span>
-      Otros atributos muy utilizados pero no recomendados a día de hoy para la maquetación (mejor con css), pero que
-      todavía se ven en código de manera frecuente son:</span>
-  <ul>
-    <li><b>HSPACE</b>="Define un margen horizontal, por ambos lados de la imágen"</li>
-    <li><b>VSPACE</b>="Define un margen horizontal, por ambos lados de la imágen"</li>
-    <li><b>ALIGN</b>="Alineación de la imágen", éste atributo admite varios valores pero los más comunes son
-      <b>left</b> y <b>right</b></li>
-  </ul>
-
-  </p>
-
-
-
-
-
-  <p>Sin embargo para alinear la imagen la etiqueta imágen debe estar en el código por delante de la primera letra de
-    primera línea del párrafo u objeto al que se quiera alinear, es decir, la etiqueta que yo he empleado para la imágen
-    de la bombilla es la siguiente. </p>
-
-  <blockquote>
+    <h1>
+        <center id="inicio">Sobre las imágenes</center>
+    </h1>
     <blockquote>
-      <p>
-        <<b>img hspace="20px" src="img/bombilla-05-diw.jpg" alt="Una bombilla encendida y otra apagada"
-          title="Bombillas"
-          align="left"</b>>
-      </p>
+        <p>
+            <<<a href="04-enlaces.html" title="Enlace a ejercicio de listas">Anterior</a>| <a href="../index.html"
+                    title="Enlace a la portada de la web">Portada</a>| <a href="06-imagenes-2.html"
+                    title="Enlace a la siguiente página">Siguiente</a> >>
+        </p>
     </blockquote>
-  </blockquote>
+    <hr>
 
-  <hr>
 
-  <p align="right">
-    <a href="#inicio">SUBIR</a>
-  </p>
+    <p>La etiqueta fundamental para insertar una imágen en una página web es <<b>img</b>></p>
+
+    <img src="./img/captura-05-diw.jpg" alt="Interfaz de la página web de IMF Business School"
+        title="Interfaz WEB de IMF">
+
+    <p>Sin embargo sólo con la etiqueta no es suficiente, necesitamos insertar los atributos básicos que me van a
+        permitir
+        "conectar" con la imágen en sí y mostrar cierta información relativa a la imágen en el caso de que la imágen no
+        se
+        cargue o por cuestiones de accesibilidad.</p>
+    <h3><b>Dichos atributos fundamentales son:</b></h3>
+
+    <ul>
+        <li><b>SRC</b>="Ruta a la imágen"</li>
+        <li><b>ALT</b>="Descripción de la imágen"</li>
+        <li><b>WIDTH</b>="Ancho de la imágen en px o %"</li>
+        <li><b>HEIGHT</b>="Altura de la imágen en px o %"</li>
+    </ul>
+
+    <p>Por lo tanto una etiqueta básica completa para insertar la captura que te muestro a continuación quedaría asi.
+    </p>
+
+    <p>
+        <<b>img src="captura.jpg" alt="captura de pantalla de mi web favorita:www.miweb.es"</b>>
+    </p>
+    <p>
+        <img hspace="20px" src="img/bombilla-05-diw.jpg" alt="Una bombilla encendida y otra apagada" title="Bombillas"
+            align="left">
+
+
+        <span>
+            Otros atributos muy utilizados pero no recomendados a día de hoy para la maquetación (mejor con css), pero
+            que
+            todavía se ven en código de manera frecuente son:</span>
+    <ul>
+        <li><b>HSPACE</b>="Define un margen horizontal, por ambos lados de la imágen"</li>
+        <li><b>VSPACE</b>="Define un margen horizontal, por ambos lados de la imágen"</li>
+        <li><b>ALIGN</b>="Alineación de la imágen", éste atributo admite varios valores pero los más comunes son
+            <b>left</b> y <b>right</b>
+        </li>
+    </ul>
+
+    </p>
+
+
+
+
+
+    <p>Sin embargo para alinear la imagen la etiqueta imágen debe estar en el código por delante de la primera letra de
+        primera línea del párrafo u objeto al que se quiera alinear, es decir, la etiqueta que yo he empleado para la
+        imágen
+        de la bombilla es la siguiente. </p>
+
+    <blockquote>
+        <blockquote>
+            <p>
+                <<b>img hspace="20px" src="img/bombilla-05-diw.jpg" alt="Una bombilla encendida y otra apagada"
+                    title="Bombillas"
+                    align="left"</b>>
+            </p>
+        </blockquote>
+    </blockquote>
+
+    <hr>
+
+    <p align="right">
+        <a href="#inicio">SUBIR</a>
+    </p>
 
 
 
