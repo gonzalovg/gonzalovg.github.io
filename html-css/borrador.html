@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="../favicon.ico">
+    <meta name="description" content="Borrador">
+    <meta name="author" content="Gonzalo Verdugo">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <title>Borrador</title>
+    <style>
+        #contenedor {
+            margin: 0 auto;
+        }
+
+        .caja {
+            background: #999;
+            border: 2px dotted #FFF;
+            margin: 20px;
+            font: 40px verdana;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 800px) {
+            #contenedor {
+                width: 640px;
+            }
+
+            body {
+                background: red;
+            }
+
+            .caja {
+                width: 600px;
+                height: 300px;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1000px) {
+            body {
+                background: green;
+            }
+
+            #contenedor {
+                width: 750px;
+            }
+
+            .caja {
+                width: 350px;
+                height: 350px;
+                float: left;
+                margin: 20px 10px;
+            }
+
+            #c {
+                clear: left;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            body {
+                background: yellow;
+            }
+
+            #contenedor {
+                width: 1100px;
+            }
+
+            .caja {
+                width: 250px;
+                height: 500px;
+                float: left;
+                margin: 20px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <div id="a" class="caja"> A </div>
+        <div id="b" class="caja"> B </div>
+        <div id="c" class="caja"> C </div>
+        <div id="d" class="caja"> D </div>
+    </div>
+</body>
+
+</html>

@@ -61,16 +61,18 @@ ul li {
 }
 
 .indexLink {
-  padding: 10px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  padding: 6px;
+  /* border: 1px solid #000; */
+  text-decoration: none;
+  /* border-radius: 5px; */
+  animation-duration: 100s;
+  animation-iteration-count: initial;
+
   display: block;
   margin: 10px 5px;
 }
 
-@keyframes link-anim {
+@keyframes link-anim-rot {
   from {
     transform: skew(0);
     border: 1px solid #000;
@@ -89,10 +91,20 @@ ul li {
   }
 }
 
+@keyframes link-anim-border {
+  from {
+    border-bottom: 1px;
+  }
+  0.5% {
+    border-bottom: 8px solid #66bb6a;
+  }
+  to {
+    border-bottom: 8px solid #66bb6a;
+  }
+}
+
 .indexLink:hover {
-  animation-name: link-anim;
-  text-decoration: none;
-  font-weight: bolder;
+  animation-name: link-anim-border;
 }
 
 .text-center {
