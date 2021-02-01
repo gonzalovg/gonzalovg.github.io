@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+  background-color: #222;
+}
+
+header {
+  background-color: #14805e;
+  display: flex;
+  flex-direction: row;
+  padding: 0 25px;
+}
+
+#logo-bet {
+  width: 80%;
+  display: flex;
+  align-content: center;
+  padding: 20px 0;
+}
+
+.header-btn {
+  width: 10%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.header-btn span {
+  display: block;
+}
