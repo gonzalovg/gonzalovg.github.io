@@ -1,128 +1,253 @@
 @charset "UTF-8";
 
 body {
-    background-color: #222;
+  background-color: #222;
 }
 
 header {
-    background-color: #14805e;
+  background-color: #14805e;
 
-    width: 100%;
+  width: 100%;
 }
-main{
-    height: 100vh;
+main {
+  height: 100vh;
 }
 
 #container-header {
-    display: flex;
-    flex-direction: row;
-    max-width: 992px;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 992px;
+  margin: auto;
 }
 
 #logo-bet {
-    width: 60%;
-    display: flex;
-    align-content: center;
-    padding: 20px;
+  width: 60%;
+  display: flex;
+  align-content: center;
+  padding: 20px;
 }
 
 .header-btn {
-    width: 20%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  width: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 5px;
 }
 
 .header-btn span {
-    display: inline-flex;
-    color: #fdfefe;
-    align-items: center;
-    font-family: "Trebuchet MS", sans-serif;
+  display: inline-flex;
+  color: #fdfefe;
+  align-items: center;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 section {
-    background-image: url("../img/BasketballSoccerTennis_1440-2x.jpg");
+  background-repeat: no-repeat;
+  background-image: url("../img/bet365-background.jpg");
+  background-position: top, right;
+  background-size: 100%;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#section-container {
+  max-width: 992px;
+}
+
+#main-section {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fdfefe;
+  padding: 50px 0 100px 30px;
+  font-family: "Noto Sans";
+}
+
+.sect-span-1 {
+  color: #4acfa5;
+  font-size: 27px;
+  line-height: 32px;
+  margin-bottom: 5px;
+}
+
+.sect-span-2 {
+  font-size: 4em;
+  margin: 5px 0;
+}
+.sect-span-3 {
+  font-size: 15px;
+  color: #bbb;
+}
+
+#main-section button {
+  width: 200px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffdf1b;
+  margin: 20px 0;
+  display: block;
+}
+
+.sect-span-4 {
+  font-size: 11px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+i {
+  font-size: 1.5em;
+  margin: 0 5px;
+  color: #222;
+}
+
+i:hover {
+  color: red;
+}
+
+footer {
+  width: 100%;
+  background-color: #14805e;
+  padding: 5px 0;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+footer h1 {
+  color: #fdfefe;
+}
+
+/* @media (max-width: 992px) {
+  section {
     background-repeat: no-repeat;
+    background-image: url("../img/bet365-background.jpg");
+    background-position: top, right;
     background-size: 100%;
-    height: 100%;
 
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: tomato;
+  }
+} */
+
+@media (min-width: 992px) {
+  section {
+    background-image: url("../img/bet365-2880.jpg");
+    background-size: auto;
+    background-position: center;
+    background-color: #222;
+    background-size: auto 624px;
+  }
+
+  #main-section {
+    padding: 50px 0 100px 30px;
+  }
 }
 
-#section-container {
-    max-width: 992px;
-    margin: 0 auto;
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    background-image: url("../img/bet365-background.jpg");
+    background-size: 100%;
+    background-color: #222;
+  }
 
-}
-
-#main-section {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #fdfefe;
-    padding: 50px 0 0 30px;
-    font-family: "Noto Sans";
-}
-
-.sect-span-1 {
-    color: #4acfa5;
-    font-size: 27px;
-    line-height: 32px;
-    margin-bottom: 5px;
-}
-
-.sect-span-2 {
-    font-size: 4em;
-    margin: 5px 0;
-}
-.sect-span-3 {
-    font-size: 15px;
-    color: #bbb;
-}
-
-#main-section button {
-    width: 200px;
-    padding: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffdf1b;
-    margin: 20px 0;
-}
-
-.sect-span-4 {
-    font-size: 11px;
-    color: #bbb;
-    margin-bottom: 10px;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-i{
-    font-size: 1.5em;
-    margin: 0 5px;
-    color:#222;
-}
-
-i:hover{
-    color:red;
-}
-
-footer{
+  #section-container {
     width: 100%;
-    background-color:#14805e;
-    padding:5px 0;
+    padding: 500px 0 0 0;
+  }
+  #main-section {
+    padding: 50px 0 10% 30px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #main-section button {
+    margin: 20px auto;
+  }
+
+  .sect-span-2 {
+    font-size: 2.5em;
+  }
+
+  .sect-span-1,
+  .sect-span-2,
+  .sect-span-3,
+  .sect-span-4 {
     text-align: center;
-    font-family: "Noto Sans", sans-serif;
-
+  }
 }
 
-footer h1{
-    color: #fdfefe;
+@media (min-width: 576px) and (max-width: 767px) {
+  section {
+    background-image: url("../img/bet-365-background-2.jpg");
+    background-color: turquoise;
+    background-size: 100%;
+    background-color: #222;
+  }
+
+  #section-container {
+    width: 100%;
+    padding: 500px 0 0 0;
+  }
+  #main-section {
+    padding: 50px 0 10% 30px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #main-section button {
+    margin: 20px auto;
+  }
+
+  .sect-span-2 {
+    font-size: 2.5em;
+  }
+
+  .sect-span-1,
+  .sect-span-2,
+  .sect-span-3,
+  .sect-span-4 {
+    text-align: center;
+  }
 }
 
+@media (max-width: 575px) {
+  section {
+    background-image: url("../img/bet-365-background-2.jpg");
+    background-color: turquoise;
+    background-size: 100%;
+    background-color: #222;
+  }
+
+  #section-container {
+    width: 100%;
+    padding: 500px 0 0 0;
+  }
+  #main-section {
+    padding: 50px 0 10% 30px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #main-section button {
+    margin: 20px auto;
+  }
+
+  .sect-span-2 {
+    font-size: 2.5em;
+  }
+
+  .sect-span-1,
+  .sect-span-2,
+  .sect-span-3,
+  .sect-span-4 {
+    text-align: center;
+  }
+}
