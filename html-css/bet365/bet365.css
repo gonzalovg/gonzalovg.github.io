@@ -213,6 +213,20 @@ footer h1 {
     font-size: 2.5em;
   }
 
+  #top-1 {
+    order: 1;
+  }
+
+  #logo-bet {
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  #top-2 {
+    order: 3;
+  }
+
   .sect-span-1,
   .sect-span-2,
   .sect-span-3,
