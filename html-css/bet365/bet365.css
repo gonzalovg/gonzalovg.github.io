@@ -233,4 +233,8 @@ footer h1 {
   .sect-span-4 {
     text-align: center;
   }
+
+  #back-arrow {
+    display: none;
+  }
 }
