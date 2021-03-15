@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+body {
+  background-image: url("../img/roman-markov-GJwsDxDfkXQ-unsplash\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  padding: 15px;
+  display: flex;
+  align-content: center;
+  margin-bottom: 1vh;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+input,
+label {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  padding: 0 0 0 20px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+}
+
+h1,
+h2 {
+  font-family: "Anton", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.indexLink {
+  text-decoration: none;
+  display: block;
+  font-family: "Anton", sans-serif;
+  color: black;
+  font-size: 1.5em;
+}
+
+header {
+  font-size: 2em;
+}
+
+header:hover {
+  color: black;
+}
+
+a:hover {
+  color: #e51b0e;
+  text-decoration: none;
+}
+
+section {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.intro {
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  body {
+    background-image: url("../img/roman-markov-GJwsDxDfkXQ-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+
+    background-position: center;
+  }
+  section {
+    max-width: 992px;
+    margin: 0 auto;
+    height: 600px;
+  }
+  input,
+  label {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-image: url("../img/roman-markov-GJwsDxDfkXQ-unsplash\ \(1\).jpg");
+    background-position: center;
+  }
+  section {
+    padding: 0 10px;
+    height: 90vh;
+    background-color: rgba(253, 254, 254, 0.7);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+
+  input:checked ~ .indexLink {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+
+  ul {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+  }
+
+  li {
+    display: block;
+    padding: 10px;
+    list-style: none;
+  }
+
+  li:hover {
+    filter: brightness(110%);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../img/roman-markov-GJwsDxDfkXQ-unsplash\ \(2\).jpg");
+
+    background-position: bottom;
+  }
+  section {
+    padding: 0 10px;
+    height: 90vh;
+    background-color: rgba(253, 254, 254, 0.7);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+
+  input:checked ~ .indexLink {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+
+  ul {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+  }
+
+  li {
+    display: block;
+    padding: 10px;
+    list-style: none;
+  }
+
+  li:hover {
+    filter: brightness(110%);
+  }
+}
